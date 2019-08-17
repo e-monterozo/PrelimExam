@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background: #ebebeb
+}
+
+header{
+    padding: 20px;
+    background: palevioletred;
+    color: #fff;
+    margin-bottom: 10px
+}
+
+.container{
+    margin: auto;
+    max-width: 1024px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 789px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#result {
+    margin-top: 10%;
+    padding-left: 8px;
+	padding-right: 8px;
+	
+    background-color: #ffffcc;
+    
+}  
+
+#col1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#col2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* trivia */
+#gen{
+    border: 0px;
+    padding: 20px;
+    margin-bottom: 10px;
+	border-radius: 50%;
+    background: rgb(231, 137, 169);
+    color: #fff;
+    cursor: pointer;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: auto;
+}
+
+#get-trivia:disabled{
+    opacity: .6;
+    cursor: not-allowed;
+}
